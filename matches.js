@@ -2,6 +2,8 @@
 
 let data = JSON.parse(localStorage.getItem("schedule"));
 
+dispfunc(data);
+
 function filterfunc(value, data, dispfunc) {
   if (value == "none") {
     dispfunc(data);
@@ -38,8 +40,9 @@ function dispfunc(data) {
     let c5 = document.createElement("td");
     c5.innerText = venue;
 
-    let button = document.createElement("button");
+    let button = document.createElement("h4");
     button.innerText = "Favourite";
+    button.style.cursor = "pointer";
 
     button.addEventListener("click", () => {
       favfunc(elem, fav);
