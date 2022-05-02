@@ -40,9 +40,10 @@ function dispfunc(data) {
     let c5 = document.createElement("td");
     c5.innerText = venue;
 
-    let button = document.createElement("h4");
-    button.innerText = "Favourite";
+    let button = document.createElement("td");
+    button.innerText = "Add as Favourites";
     button.style.cursor = "pointer";
+    button.style.color = "green";
 
     button.addEventListener("click", () => {
       favfunc(elem, fav);

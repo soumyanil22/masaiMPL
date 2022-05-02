@@ -20,7 +20,7 @@ fav.forEach((elem) => {
   let c5 = document.createElement("td");
   c5.innerText = venue;
 
-  let button = document.createElement("h4");
+  let button = document.createElement("td");
   button.innerText = "Delete";
   button.style.cursor = "pointer";
 
