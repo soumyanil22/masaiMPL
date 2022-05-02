@@ -17,6 +17,7 @@ function filterfunc(value, data, dispfunc) {
 let fav = JSON.parse(localStorage.getItem("favourites")) || [];
 
 function dispfunc(data) {
+  document.querySelector("tbody").innerHTML = "";
   data.forEach((elem) => {
     let num = elem.num;
     let teamA = elem.team1;
